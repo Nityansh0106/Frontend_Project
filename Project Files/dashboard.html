@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard – EV Analytics Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <h1 class="logo">EV Analytics Dashboard</h1>
+      <button class="btn-outline">Logout</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- KPIs -->
+    <section class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-label">Total Users</div>
+        <div class="kpi-value">1,240</div>
+        <div class="kpi-delta up">+8% vs last week</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-label">Charging Sessions</div>
+        <div class="kpi-value">3,520</div>
+        <div class="kpi-delta up">+5% vs last week</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-label">Revenue</div>
+        <div class="kpi-value">₹1,25,000</div>
+        <div class="kpi-delta up">+12% vs last week</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-label">Avg Session Duration</div>
+        <div class="kpi-value">28.4 min</div>
+        <div class="kpi-delta down">-2% vs last week</div>
+      </div>
+    </section>
+
+    <!-- Chart -->
+    <section class="card">
+      <h2>Charging Sessions – Last 7 Days</h2>
+      <div class="chart-box">
+        <div class="bar" style="height: 40px;" title="Mon: 210"></div>
+        <div class="bar" style="height: 65px;" title="Tue: 340"></div>
+        <div class="bar" style="height: 55px;" title="Wed: 290"></div>
+        <div class="bar" style="height: 80px;" title="Thu: 420"></div>
+        <div class="bar" style="height: 72px;" title="Fri: 380"></div>
+        <div class="bar" style="height: 88px;" title="Sat: 460"></div>
+        <div class="bar" style="height: 100px;" title="Sun: 520"></div>
+      </div>
+      <div class="chart-labels">
+        <span>Mon</span>
+        <span>Tue</span>
+        <span>Wed</span>
+        <span>Thu</span>
+        <span>Fri</span>
+        <span>Sat</span>
+        <span>Sun</span>
+      </div>
+    </section>
+
+    <!-- Table -->
+    <section class="card">
+      <h2>Top Charging Stations</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Station Name</th>
+            <th>Total Sessions</th>
+            <th>Revenue (₹)</th>
+            <th>Avg Duration (min)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Station A – Connaught Place</td>
+            <td>980</td>
+            <td>₹42,000</td>
+            <td>32</td>
+          </tr>
+          <tr>
+            <td>Station B – Dwarka</td>
+            <td>760</td>
+            <td>₹31,000</td>
+            <td>27</td>
+          </tr>
+          <tr>
+            <td>Station C – Rohini</td>
+            <td>620</td>
+            <td>₹24,000</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <td>Station D – Nehru Place</td>
+            <td>540</td>
+            <td>₹21,000</td>
+            <td>30</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
